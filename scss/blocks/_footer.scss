@@ -50,6 +50,20 @@
    display: flex;
    flex-direction: column;
    margin-right: 135px;
+   position: relative;
+   z-index: 1;
+}
+.footer__time-case::before{
+   content: "";
+   position: absolute;
+   z-index: -1;
+   background-image: url(../img/schedule.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 13px;
+   height: 13px;
+   left: -20px;
+   top: 4px;
 }
 .footer__time{
    font-family: "Futura PT";
@@ -63,7 +77,7 @@
    margin-top: 3px;
 }
 .footer__address{
-   width: 157px;
+   width: 135px;
    position: relative;
    z-index: 1;
    margin-right: auto;
@@ -78,20 +92,19 @@
    width: 14px;
    height: 13px;
    left: -22px;
-   top: 2px;
+   top: 4px;
 }
 .footer__address-link{
-   
-      font-family: "Futura PT";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 18px;
-      display: flex;
-      align-items: center;
-      color: #333333;
-      text-decoration: none;
-      transition: 0.2s ease;
+   font-family: "Futura PT";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 18px;
+   display: flex;
+   align-items: center;
+   color: #333333;
+   text-decoration: none;
+   transition: 0.2s ease;
 }
 .footer__address-link:hover{
    color: #FFBD54;
@@ -104,6 +117,20 @@
 .numb-list{
    margin: 0px;
    padding: 0px;
+   position: relative;
+   z-index: 1;
+}
+.numb-list::before{
+   content: "";
+   position: absolute;
+   z-index: -1;
+   background-image: url(../img/phone.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 13px;
+   height: 13px;
+   left: -22px;
+   top: 4px;
 }
 .numb-list__item{
    list-style: none;
